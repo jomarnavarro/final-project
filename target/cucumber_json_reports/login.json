@@ -1,0 +1,262 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-05-19T16:34:37.143Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1176288,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.before()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "User can login succesfully",
+        "description": "",
+        "id": "songs-by-sinatra-login;user-can-login-succesfully",
+        "after": [
+          {
+            "result": {
+              "duration": 22121,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "I navigate to Home Page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "I log into the site with credentials frank:sinatra",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "I will be in Home Page",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "I will be able to Add a Song",
+            "match": {},
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-05-19T16:34:37.160Z",
+        "before": [
+          {
+            "result": {
+              "duration": 34946,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.before()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "User can not log in using wrong credentials",
+        "description": "",
+        "id": "songs-by-sinatra-login;user-can-not-log-in-using-wrong-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 10580,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "I navigate to Home Page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "I log into the site with credentials frenk:sinotra",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "I will see an error message",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-05-19T16:34:37.161Z",
+        "before": [
+          {
+            "result": {
+              "duration": 24366,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.before()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "User can not log in using wrong credentials",
+        "description": "",
+        "id": "songs-by-sinatra-login;user-can-not-log-in-using-wrong-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 10579,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "I navigate to Home Page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "I log into the site with credentials frank",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "I will see an error message",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2019-05-19T16:34:37.163Z",
+        "before": [
+          {
+            "result": {
+              "duration": 21160,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.before()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "User can not log in using wrong credentials",
+        "description": "",
+        "id": "songs-by-sinatra-login;user-can-not-log-in-using-wrong-credentials;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 9938,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseSteps.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 13,
+            "name": "I navigate to Home Page",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 14,
+            "name": "I log into the site with credentials ",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "I will see an error message",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Songs by Sinatra Login",
+    "description": "  As a User\n  I want to log into Sinatra\n  So I can do CRUD on Songs",
+    "id": "songs-by-sinatra-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": []
+  }
+]
