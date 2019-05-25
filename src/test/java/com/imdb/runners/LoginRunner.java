@@ -13,7 +13,8 @@ import org.junit.runner.RunWith;
         "html:target/login-html"},
         glue = {"com.imdb.pages",
                 "com.imdb.steps",
-                "com.imdb.utils"})
+                "com.imdb.utils",
+                "com.imdb.hooks"})
 
 
 public class LoginRunner {}
