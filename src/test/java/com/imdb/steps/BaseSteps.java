@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import com.imdb.hooks.Hooks;
 import com.imdb.pages.HomePage;
 import com.imdb.pages.LoginPage;
 import com.imdb.pages.SongCreationPage;
@@ -22,17 +23,12 @@ public class BaseSteps {
 	public SongInfoPage songInfo;
 	public SongsListPage songList;
 	
-	@Before
-	public void before() {
-		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(5,  TimeUnit.SECONDS);
+	public BaseSteps() {
+		this.driver = Hooks.driver;
 		home = new HomePage(driver);
 		login = new LoginPage(driver);
+		songCreation = new SongCreationPage(driver);
+		songInfo = new SongInfoPage(driver);
+		songList = new SongsListPage(driver);
 	}
-	
-	@After
-	public void after() {
-		//code goes here
-	}
-
 }
