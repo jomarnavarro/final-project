@@ -1,6 +1,6 @@
 target/*
 *.class
-target/
 .idea/*
 final-project.iml
 .classpath
+.settings
