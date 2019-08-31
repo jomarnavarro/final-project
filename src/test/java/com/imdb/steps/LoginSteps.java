@@ -1,15 +1,21 @@
 package com.imdb.steps;
 
+import com.imdb.hooks.Hooks;
+import com.imdb.pages.SinatraSite;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class LoginSteps extends BaseSteps {
-	
+public class LoginSteps {
+	SinatraSite sinatraSite;
+
+	public LoginSteps(Hooks hooksClass) {
+		this.sinatraSite = hooksClass.sinatraSite;
+	}
 	@When("I log into the site with credentials {word}")
 	public void i_log_into_the_site_with_credentials_frank_sinatra(String credentials) {
 		//trabajo en dos paginas.  la home page, y la login page
-		home.startLogin();
-		login.loginCorrecto(credentials);
+		sinatraSite.home().startLogin();
+		sinatraSite.login().loginCorrecto(credentials);
 	    
 	}
 	
