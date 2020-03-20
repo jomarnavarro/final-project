@@ -11,23 +11,26 @@ import com.imdb.utils.Properties;
 public class HomePage extends BasePage {
 
 	// page members
-	@FindBy(how = How.XPATH, using =  "//h1")
+	@FindBy(xpath ="//h1")
 	WebElement pageTitle;
 	
-	@FindBy(how = How.XPATH, using = "//ul")
+	@FindBy(xpath = "//ul")
 	WebElement linksMenu;
 	
-	@FindBy(how=How.XPATH, using ="//img")
+	@FindBy(xpath ="//img")
 	WebElement sinatraImg;
 	
-	@FindBy(how=How.XPATH, using="//a[contains(@href,'login')]")
+	@FindBy(xpath ="//a[contains(@href,'login')]")
 	WebElement loginLink;
 	
-	@FindBy(how=How.LINK_TEXT, using="log out")
+	@FindBy(linkText = "log out")
 	WebElement logoutLink;
 	
-	@FindBy(how = How.XPATH, using = "//a[@title='Songs']")
+	@FindBy(xpath = "//a[@title='Songs']")
 	WebElement songsLink;
+
+	@FindBy(id = "flash")
+	public WebElement welcomeLbl; //id = "flash"
 
 	public HomePage(WebDriver driver) {
 		super(driver);

@@ -1,5 +1,6 @@
-package com.imdb.pages;
+package com.imdb.sites;
 
+import com.imdb.pages.*;
 import org.openqa.selenium.WebDriver;
 
 public class SinatraSite {

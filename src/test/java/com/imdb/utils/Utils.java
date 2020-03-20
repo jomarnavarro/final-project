@@ -3,13 +3,24 @@ package com.imdb.utils;
 public class Utils {
 	
 	public static String getUser(String credentials) {
-		String[] creds = credentials.split(":");
-		return creds[0];
+		try {
+			return getCredentials(credentials)[0];
+		} catch(ArrayIndexOutOfBoundsException ex) {}
+		finally {
+			return "";
+		}
 	}
 	
 	public static String getPassword(String credentials) {
-		String[] creds = credentials.split(":");
-		return creds[1];
+		try {
+			return getCredentials(credentials)[1];
+		} catch(ArrayIndexOutOfBoundsException ex) {}
+		finally {
+			return "";
+		}
 	}
 
+	public static String[] getCredentials(String creds) {
+		return creds.split(":");
+	}
 }

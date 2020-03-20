@@ -17,5 +17,5 @@ Feature: Songs by Sinatra Login
     Examples: 
       | bad_credentials |
       | frenk:sinotra   |
-      | frank           |
-      |                 |
+      | frank:          |
+      |       :         |

@@ -4,3 +4,4 @@ target/*
 final-project.iml
 .classpath
 .settings
+/target/
