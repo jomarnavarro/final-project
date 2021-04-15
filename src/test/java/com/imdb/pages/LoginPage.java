@@ -11,18 +11,17 @@ import com.imdb.utils.Utils;
 
 public class LoginPage extends BasePage {
 
-	@FindBy(how = How.ID, using =  Locators.USER_FIELD_ID)
+	@FindBy(id =  Locators.USER_FIELD_ID)
 	WebElement userField;// : id="username"
 	
-	@FindBy(how = How.ID, using =  Locators.PASS_FIELD_ID)
+	@FindBy(id =  Locators.PASS_FIELD_ID)
 	WebElement passField;// : id="password"
 	
-	@FindBy(how = How.XPATH, using =  "//input[@value = 'Log In' ]")
+	@FindBy(xpath =  "//input[@value = 'Log In' ]")
 	WebElement loginButton;// : xpath = "//input[@value = 'Log In' ]"
 
 	public LoginPage(WebDriver driver) {
 		super(driver);
-		PageFactory.initElements(driver, this);
 	}
 
 	public void loginCorrecto(String credentials) {

@@ -6,7 +6,6 @@ public class SongInfoPage extends BasePage {
 
 	public SongInfoPage(WebDriver driver) {
 		super(driver);
-		// TODO Auto-generated constructor stub
 	}
 
 }
